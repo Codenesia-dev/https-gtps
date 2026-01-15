@@ -10,8 +10,11 @@ A high-performance, secure, and monitorable HTTPS server built with **Rust** Lan
 - **Portable Executable**: Run directly without installing any dependencies or compilers.
 - **Real-time Dashboard**: Interactive TUI showing CPU/RAM usage, server configuration, and live HTTP traffic logs.
 - **Security Suite**:
-    - **Stealth Filter**: Automatically detects and blocks malicious User-Agents or crawlers.
+    - **Checker Filter**: Automatically detects and blocks malicious crawlers.
     - **Rate Limiting**: Per-route configurable request limits to prevent spam/DDoS.
+    - **User Agent Validator**: Ensure validation to avoid bots/user cheats
+    - **Compression Layer**: compress the server to make it lighter and ready to receive a flood of requests
+    - **Concurrency Limiter**: Sets the currency limit to keep the server stable.
 - **Dynamic Server Data**: Serves `server_data.php` with dynamic environment variable injection.
 - **Cache Layer**: Built-in reverse proxy with caching support on `/cache/` endpoints.
 
