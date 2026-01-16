@@ -1,6 +1,6 @@
 # CODENESIA HTTPS - GTPS v1.0
 
-A high-performance, secure, and monitorable HTTPS server built with **Rust** Language, designed specifically for GTPS `(Growtopia Private Server)` infrastructure. Featuring a real-time TUI (Terminal User Interface), advanced rate limiting, and security filtering.
+A high-performance, secure, and monitorable HTTPS server built with **Rust** Language, designed specifically for GTPS `(Growtopia Private Server)` infrastructure.
 <img width="1159" height="554" alt="image" src="https://github.com/user-attachments/assets/d9b19d81-591d-4863-afdc-d1ec5685125b" />
 
 ---
@@ -10,11 +10,11 @@ A high-performance, secure, and monitorable HTTPS server built with **Rust** Lan
 - **Portable Executable**: Run directly without installing any dependencies or compilers.
 - **Real-time Dashboard**: Interactive TUI showing CPU/RAM usage, server configuration, and live HTTP traffic logs.
 - **Security Suite**:
-    - **Checker Filter**: Automatically detects and blocks malicious crawlers.
-    - **Rate Limiting**: Per-route configurable request limits to prevent spam/DDoS.
-    - **User Agent Validator**: Ensure validation to avoid bots/user cheats
-    - **Compression Layer**: compress the server to make it lighter and ready to receive a flood of requests
-    - **Concurrency Limiter**: Sets the currency limit to keep the server stable.
+  - **Checker Filter**: Automatically detects and blocks malicious crawlers.
+  - **Rate Limiting**: Per-route configurable request limits to prevent spam/DDoS.
+  - **User Agent Validator**: Ensure validation to avoid bots/user cheats
+  - **Compression Layer**: compress the server to make it lighter and ready to receive a flood of requests
+  - **Concurrency Limiter**: Sets the currency limit to keep the server stable.
 - **Dynamic Server Data**: Serves `server_data.php` with dynamic environment variable injection.
 - **Cache Layer**: Built-in reverse proxy with caching support on `/cache/` endpoints.
 
@@ -25,6 +25,7 @@ A high-performance, secure, and monitorable HTTPS server built with **Rust** Lan
 Before running `.exe`, make sure you have prepared/set the `.env` file.
 
 ### 1. Open File `.env`
+
 Setting and adjusting to GTPS needs:
 
 ```env
@@ -38,7 +39,9 @@ BETA_PORT=17092
 ```
 
 ### 2. Certificate SSL (HTTPS)
+
 HTTPS requires a valid `.pem` file:
+
 - `cert.pem`
 - `key.pem`
 
@@ -57,7 +60,7 @@ TLS_KEY_PATH=certs/key.pem
 3. **Running**: Right click on `https-gtps.exe` and select **Run as Administrator**.
 4. **Dashboard**: TUI dashboard will appear, as below!
    <img width="1216" height="573" alt="image" src="https://github.com/user-attachments/assets/69434daa-9492-48f3-a408-3fd544caf179" />
-6. **Shutdown**: To shut down the server safely (graceful shutdown), just press the **`q`** key on the keyboard.
+5. **Shutdown**: To shut down the server safely (graceful shutdown), just press the **`q`** key on the keyboard.
 
 ---
 
@@ -78,4 +81,3 @@ TLS_KEY_PATH=certs/key.pem
 ---
 
 **Developed with ❤️ by CODENESIA**
-
